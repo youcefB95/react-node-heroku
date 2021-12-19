@@ -4,10 +4,15 @@
   "description": "React & NodeJS app",
   "main": "server.js",
   "scripts": {
-    "start" : "node server.js",
-    "watch" : "nodemon sever.js",
-    "client" : "cd client && npm start",
-    "build" : "cd client && npm run build"
+    "start": "node server.js",
+    "watch": "nodemon sever.js",
+    "client": "cd client && npm start",
+    "install-client": "cd client && npm install",
+    "heroku-postbuild": "npm run install-client && npm run build",
+    "build": "cd client && npm run build"
+  },
+  "engines":{
+    "node":"14.x  "
   },
   "author": "youcefB95",
   "license": "ISC",
