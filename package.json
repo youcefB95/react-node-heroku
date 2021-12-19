@@ -1,0 +1,21 @@
+{
+  "name": "bac-general-2022",
+  "version": "1.0.0",
+  "description": "React & NodeJS app",
+  "main": "server.js",
+  "scripts": {
+    "start" : "node server.js",
+    "watch" : "nodemon sever.js",
+    "client" : "cd client && npm start",
+    "build" : "cd client && npm run build"
+  },
+  "author": "youcefB95",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
